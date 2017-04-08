@@ -252,6 +252,6 @@ MaxLevel = n or 0
 
 physics.start()
 physics.setGravity(0, 0)
-physics.setDrawMode("hybrid")
+--physics.setDrawMode("hybrid")
 
 return M

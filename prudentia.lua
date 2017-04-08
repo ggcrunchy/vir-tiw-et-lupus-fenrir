@@ -97,7 +97,7 @@ return utils.NewScene(
 			display.newText(item, items[i], circle.x, circle.y, native.systemFont, 15)
 		end
 
-		if system.getInfo("platform") == "android" then
+		if system.getInfo("platform") == "android" and system.getInfo("environment") == "device" then
 			local info, angle = {
 				0, -1, "up",
 				1, 0, "right",

@@ -189,7 +189,7 @@ return utils.NewScene(
 
 		Runtime:addEventListener("enterFrame", UpdateTeeth)
 
-		if system.getInfo("platform") == "android" then
+		if system.getInfo("platform") == "android" and system.getInfo("environment") == "device" then
 			local info, angle = {
 				0, -1, "up",
 				0, 1, "down"
